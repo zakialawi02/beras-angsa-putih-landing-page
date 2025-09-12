@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body class="antialiased min-h-screen font-sans bg-background text-foreground">
+    <!-- Header Navigation -->
+    <nav class="w-full fixed left-0 right-0 top-0 z-50 transition-all duration-300" id="main-nav" data-variant="transparent">
+      <div class="container px-3 mx-auto md:px-4">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo on the left -->
+          <div class="flex-shrink-0">
+            <a href="#" class="text-xl font-bold text-background">
+              <img src="./img/CV_NEEDFAST_white.svg" alt="Logo" class="h-4 white-logo font-sans! md:h-7 w-auto inline-block" />
+              <img src="./img/CV_NEEDFAST_color.svg" alt="Logo" class="h-4 color-logo hidden! font-sans! md:h-7 w-auto inline-block" />
+              <span class="ml-0 md:ml-1 text-[15px] md:text-lg font-bold uppercase inline-block md:hidden lg:inline-block tracking-tight">Beras Angsa Putih</span>
+            </a>
+          </div>
+
+          <!-- Navigation menu on the right -->
+          <div class="hidden md:block">
+            <div class="flex items-center space-x-2">
+              <a href="#home" class="text-background transition-all duration-300 underline-animation hover:text-accent px-3 py-2 rounded-md font-medium">Home</a>
+              <a href="#tentang-kami" class="text-background transition-all duration-300 underline-animation hover:text-accent px-3 py-2 rounded-md font-medium">Tentang Kami</a>
+              <a href="#produk" class="text-background transition-all duration-300 underline-animation hover:text-accent px-3 py-2 rounded-md font-medium">Produk</a>
+              <a href="#keunggulan" class="text-background transition-all duration-300 underline-animation hover:text-accent px-3 py-2 rounded-md font-medium">Keunggulan</a>
+              <a href="#klien" class="text-background transition-all duration-300 underline-animation hover:text-accent px-3 py-2 rounded-md font-medium">Klien</a>
+              <a href="#kontak" class="text-background transition-all duration-300 underline-animation hover:text-accent px-3 py-2 rounded-md font-medium">Kontak</a>
+            </div>
+          </div>
+
+          <!-- Hamburger button -->
+          <div class="md:hidden flex items-center">
+            <button class="hamburger-button">
+              <svg class="w-6 h-6 text-background hover:text-accent" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="hidden border-t-2 border-primary bg-primary/40 md:bg-transparent shadow-2xl backdrop-blur-md md:backdrop-blur-none text-background mobile-menu md:hidden">
+        <ul class="pt-2 pb-3 space-y-1">
+          <li>
+            <a href="#home" class="block px-4 py-2 text-sm font-medium hover:bg-primary hover:text-accent-foreground">Home</a>
+          </li>
+          <li>
+            <a href="#tentang-kami" class="block px-4 py-2 text-sm font-medium hover:bg-primary hover:text-accent-foreground">Tentang Kami</a>
+          </li>
+          <li>
+            <a href="#produk" class="block px-4 py-2 text-sm font-medium hover:bg-primary hover:text-accent-foreground">Produk</a>
+          </li>
+          <li>
+            <a href="#keunggulan" class="block px-4 py-2 text-sm font-medium hover:bg-primary hover:text-accent-foreground">Keunggulan</a>
+          </li>
+          <li>
+            <a href="#klien" class="block px-4 py-2 text-sm font-medium hover:bg-primary hover:text-accent-foreground">Klien</a>
+          </li>
+          <li>
+            <a href="#kontak" class="block px-4 py-2 text-sm font-medium hover:bg-primary hover:text-accent-foreground">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Jumbotron with image background -->
+      <section id="home" class="relative flex min-h-screen items-center justify-center bg-cover bg-center bg-[url('./../img/hand-holding-rice-2.webp')]">
+        <!-- Gradient Overlay -->
+        <!-- <div class="to-background/50 from-muted-foreground/80 absolute inset-0 bg-gradient-to-b opacity-80"></div> -->
+        <div class="absolute inset-0 opacity-80" style="background: radial-gradient(125% 125% at 50% 10%, #008da6aa 50%, #f9f9fade 100%)"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-background mb-4">Beras Kualitas Premium</h1>
+          <h2 class="text-2xl md:text-3xl font-semibold text-background mb-4">Beras Premium untuk Hidup Lebih Sehat dan Berkualitas</h2>
+          <p class="text-lg md:text-xl text-background mb-8">Dari sawah terbaik, melalui proses modern, hingga sampai ke meja makan Anda dengan kualitas terjaga.</p>
+
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-4 w-full">
+            <a
+              href="#produk"
+              class="w-full sm:w-auto px-6 py-2 text-lg text-primary-foreground font-medium text-center bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary transition-all duration-500 ease-in-out transform hover:scale-105 rounded-full"
+              >Lihat Produk</a
+            >
+            <a
+              href="#kontak"
+              class="w-full sm:w-auto px-6 py-2 text-lg font-medium border-2 border-primary-foreground text-primary-foreground text-center transition-all duration-300 ease-in-out transform hover:scale-105 rounded-full -inset-2 hover:bg-primary-foreground hover:text-primary shadow-lg"
+              ><i class="fa-solid fa-phone"></i> Hubungi Kami</a
+            >
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-4 cursor-pointer left-1/2 -translate-x-1/2 transform animate-bounce">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="background" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+      </section>
+
+      <section id="tentang-kami" class="min-h-screen py-16 bg-primary">
+        <div class="container mx-auto md:px-4 lg:px-6">
+          <h1>Hello, World!</h1>
+          <h2>Hello, World!</h2>
+          <h3>Hello, World!</h3>
+          <h4>Hello, World!</h4>
+          <p>Hello, World!</p>
+        </div>
+      </section>
+
+      <!-- Keunggulan -->
+      <section id="keunggulan" class="py-20 min-h-screen bg-background">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-20">
+            <h2 class="text-4xl mb-4">Keunggulan <span class="text-primary">Kami</span></h2>
+            <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+          </div>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Advantage 1 -->
+            <div class="bg-primary-foreground p-8 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+              <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-background mb-6 mx-auto">
+                <i class="fas fa-tag text-xl"></i>
+              </div>
+              <h3 class="text-xl text-center text-foreground/80 mb-4">Harga Kompetitif</h3>
+              <p class="text-foreground/70 text-center">Harga kompetitif dengan kualitas premium yang tidak bisa Anda temukan di tempat lain.</p>
+            </div>
+
+            <!-- Advantage 2 -->
+            <div class="bg-primary-foreground p-8 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+              <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-background mb-6 mx-auto">
+                <i class="fas fa-truck text-xl"></i>
+              </div>
+              <h3 class="text-xl text-center text-foreground/80 mb-4">Gratis Ongkir</h3>
+              <p class="text-foreground/70 text-center">Layanan gratis ongkir untuk area tertentu, membuat pembelian Anda lebih hemat.</p>
+            </div>
+
+            <!-- Advantage 3 -->
+            <div class="bg-primary-foreground p-8 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+              <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-background mb-6 mx-auto">
+                <i class="fas fa-leaf text-xl"></i>
+              </div>
+              <h3 class="text-xl text-center text-foreground/80 mb-4">Supply Chain Langsung</h3>
+              <p class="text-foreground/70 text-center">Supply chain langsung dari petani ke konsumen, sehingga kualitas terjamin.</p>
+            </div>
+
+            <!-- Advantage 4 -->
+            <div class="bg-primary-foreground p-8 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+              <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-background mb-6 mx-auto">
+                <i class="fas fa-handshake text-xl"></i>
+              </div>
+              <h3 class="text-xl text-center text-foreground/80 mb-4">Kontrak Kerjasama</h3>
+              <p class="text-foreground/70 text-center">Kontrak kerjasama dengan harga lebih bersahabat untuk kebutuhan jangka panjang.</p>
+            </div>
+
+            <!-- Advantage 5 -->
+            <div class="bg-primary-foreground p-8 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+              <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-background mb-6 mx-auto">
+                <i class="fas fa-headset text-xl"></i>
+              </div>
+              <h3 class="text-xl text-center text-foreground/80 mb-4">Layanan Profesional</h3>
+              <p class="text-foreground/70 text-center">Layanan profesional dengan tim yang ramah, responsif, dan siap membantu Anda.</p>
+            </div>
+
+            <!-- Advantage 6 -->
+            <div class="bg-primary-foreground p-8 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+              <div class="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-background mb-6 mx-auto">
+                <i class="fas fa-clock text-xl"></i>
+              </div>
+              <h3 class="text-xl text-center text-foreground/80 mb-4">Distribusi Tepat Waktu</h3>
+              <p class="text-foreground/70 text-center">Distribusi tepat waktu sesuai jadwal yang telah disepakati, tanpa penundaan.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Klien -->
+      <section id="klien" class="py-20 min-h-screen bg-muted/50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-20">
+            <h2 class="text-4xl mb-4">Portofolio / <span class="text-primary">Klien</span></h2>
+            <p class="text-xl text-foreground/70 max-w-3xl mx-auto">Dipercaya oleh berbagai mitra bisnis, mulai dari restoran, hotel, hingga distributor skala besar di Jawa Timur.</p>
+            <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mt-6"></div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+            <div class="bg-white max-h-16 p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center">
+              <img src="https://placehold.co/200x100/f8fafc/008da6?text=Restaurant+A" alt="Client" class="max-h-12" />
+            </div>
+            <div class="bg-white max-h-16 p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center">
+              <img src="https://placehold.co/200x100/f8fafc/008da6?text=Hotel+B" alt="Client" class="max-h-12" />
+            </div>
+            <div class="bg-white max-h-16 p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center">
+              <img src="https://placehold.co/200x100/f8fafc/008da6?text=Distributor+C" alt="Client" class="max-h-12" />
+            </div>
+            <div class="bg-white max-h-16 p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center">
+              <img src="https://placehold.co/200x100/f8fafc/008da6?text=Catering+D" alt="Client" class="max-h-12" />
+            </div>
+            <div class="bg-white max-h-16 p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center justify-center">
+              <img src="https://placehold.co/200x100/f8fafc/008da6?text=Supermarket+E" alt="Client" class="max-h-12" />
+            </div>
+          </div>
+
+          <div class="mt-16 text-center">
+            <a
+              href="#kontak"
+              class="inline-flex items-center bg-gradient-to-r from-primary to-secondary text-background px-8 py-4 rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+            >
+              <i class="fas fa-handshake mr-3"></i> Ajukan Kerjasama
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="produk" class="min-h-screen py-16">
+        <div class="container mx-auto md:px-4 lg:px-6">
+          <h1>Serif Font!</h1>
+          <h2>Serif Font!</h2>
+          <h3>Serif Font!</h3>
+          <h4>Serif Font!</h4>
+          <p>Serif Font!</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-background py-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div class="scroll-reveal">
+            <div class="flex flex-col justify-content-start items-start mb-3">
+              <img src="./img/CV_NEEDFAST_white.svg" alt="Logo" class="h-7 white-logo font-sans! w-auto" />
+              <h2 class="text-2xl bg-white font-bold bg-clip-text text-transparent">Beras Angsa Putih</h2>
+            </div>
+            <p class="text-background/80 leading-relaxed">Beras Premium untuk Hidup Lebih Sehat dan Berkualitas</p>
+            <div class="flex space-x-4 mt-6">
+              <a href="#" class="w-12 h-12 bg-background/10 rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300 transform hover:scale-110">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-background/10 rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300 transform hover:scale-110">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="w-12 h-12 bg-background/10 rounded-full flex items-center justify-center hover:bg-secondary transition-all duration-300 transform hover:scale-110">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="scroll-reveal">
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i class="fas fa-box text-secondary"></i> Produk</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="text-background/80 hover:text-secondary transition-all duration-300 flex items-center gap-2 hover:translate-x-2"
+                  ><i class="fas fa-chevron-right text-xs"></i> Beras Premium Super</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-background/80 hover:text-secondary transition-all duration-300 flex items-center gap-2 hover:translate-x-2"
+                  ><i class="fas fa-chevron-right text-xs"></i> Beras Premium</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-background/80 hover:text-secondary transition-all duration-300 flex items-center gap-2 hover:translate-x-2"
+                  ><i class="fas fa-chevron-right text-xs"></i> Beras Medium Super</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-background/80 hover:text-secondary transition-all duration-300 flex items-center gap-2 hover:translate-x-2"
+                  ><i class="fas fa-chevron-right text-xs"></i> Beras Medium</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="scroll-reveal">
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i class="fas fa-link text-secondary"></i> Tautan</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#tentang" class="text-background/80 hover:text-secondary transition-all duration-300 flex items-center gap-2 hover:translate-x-2"
+                  ><i class="fas fa-chevron-right text-xs"></i> Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#produk" class="text-background/80 hover:text-secondary transition-all duration-300 flex items-center gap-2 hover:translate-x-2"
+                  ><i class="fas fa-chevron-right text-xs"></i> Produk</a
+                >
+              </li>
+              <li>
+                <a href="#keunggulan" class="text-background/80 hover:text-secondary transition-all duration-300 flex items-center gap-2 hover:translate-x-2"
+                  ><i class="fas fa-chevron-right text-xs"></i> Keunggulan</a
+                >
+              </li>
+              <li>
+                <a href="#klien" class="text-background/80 hover:text-secondary transition-all duration-300 flex items-center gap-2 hover:translate-x-2"
+                  ><i class="fas fa-chevron-right text-xs"></i> Klien</a
+                >
+              </li>
+              <li>
+                <a href="#kontak" class="text-background/80 hover:text-secondary transition-all duration-300 flex items-center gap-2 hover:translate-x-2"
+                  ><i class="fas fa-chevron-right text-xs"></i> Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="scroll-reveal">
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-2"><i class="fas fa-headset text-secondary"></i> Hubungi Kami</h3>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <i class="fas fa-phone text-secondary"></i>
+                <a href="tel:085117525538" class="text-background/80 hover:text-secondary transition-all duration-300">085117525538</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <i class="fas fa-envelope text-secondary"></i>
+                <a href="mailto:beras.angsaputih@gmail.com" class="text-background/80 hover:text-secondary transition-all duration-300">beras.angsaputih@gmail.com</a>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-map-marker-alt text-secondary mt-1"></i>
+                <span class="text-background/80">Mojoklanggru Lor No. 75, Surabaya</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 pt-8 text-center">
+          <p class="text-gray-400">© 2025 Angsa Putih. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Hamburger menu toggle
+      const hamburger = document.querySelector(".hamburger-button");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const nav = document.getElementById("main-nav");
+
+      hamburger.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+        // Check if the click is outside the nav element
+        if (!nav.contains(event.target) && !mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+
+      // Close mobile menu when clicking on a menu item
+      const mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Navbar scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("main-nav");
+        const navLinks = navbar.querySelectorAll("a:not(.mobile-menu a)");
+        const whiteLogo = document.querySelector(".white-logo");
+        const colorLogo = document.querySelector(".color-logo");
+
+        if (window.scrollY > 50) {
+          navbar.classList.add("bg-background");
+          navbar.classList.remove("text-background");
+          hamburger.firstElementChild.classList.add("text-primary");
+          whiteLogo.classList.add("hidden!");
+          colorLogo.classList.remove("hidden!");
+          // Update nav links color when scrolled
+          navLinks.forEach((link) => {
+            link.classList.remove("text-background");
+            link.classList.add("text-foreground");
+          });
+          // Update logo color when scrolled
+          const logo = navbar.querySelector("a:first-child");
+          logo.classList.remove("text-background");
+          logo.classList.add("text-primary");
+        } else {
+          navbar.classList.remove("bg-background");
+          hamburger.firstElementChild.classList.remove("text-primary");
+          colorLogo.classList.add("hidden!");
+          whiteLogo.classList.remove("hidden!");
+          // Update nav links color when at top
+          navLinks.forEach((link) => {
+            link.classList.remove("text-foreground");
+            link.classList.add("text-background");
+          });
+          // Update logo color when at top
+          const logo = navbar.querySelector("a:first-child");
+          logo.classList.remove("text-primary");
+          logo.classList.add("text-background");
+        }
+      });
+    </script>
+  </body>
+</html>
