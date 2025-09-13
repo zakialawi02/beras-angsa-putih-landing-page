@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @import "tailwindcss";
 @plugin '@tailwindcss/forms';
@@ -95,27 +95,27 @@
   }
 
   h1 {
-    @apply font-heading text-4xl leading-tight;
+    @apply font-heading font-serif text-4xl;
   }
 
   h2 {
-    @apply font-heading text-3xl leading-tight;
+    @apply font-heading font-serif text-3xl;
   }
 
   h3 {
-    @apply font-heading text-2xl leading-snug;
+    @apply font-heading font-serif text-2xl;
   }
 
   h4 {
-    @apply font-heading text-xl leading-snug;
+    @apply font-heading font-serif text-xl;
   }
 
   h5 {
-    @apply font-heading text-lg leading-normal;
+    @apply font-heading font-serif text-lg;
   }
 
   h6 {
-    @apply font-heading text-base leading-normal;
+    @apply font-heading font-serif text-base;
   }
 
   button:not(:disabled),
