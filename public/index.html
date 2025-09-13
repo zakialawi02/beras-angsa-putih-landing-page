@@ -33,7 +33,7 @@
   <body class="antialiased min-h-screen font-sans bg-background text-foreground">
     <!-- Header Navigation -->
     <nav class="w-full fixed left-0 right-0 top-0 z-50 transition-all duration-300" id="main-nav" data-variant="transparent">
-      <div class="container px-3 mx-auto md:px-4">
+      <div class="max-w-7xl px-3 mx-auto md:px-4">
         <div class="flex items-center justify-between h-16">
           <!-- Logo on the left -->
           <div class="flex-shrink-0">
@@ -128,7 +128,7 @@
       </section>
 
       <section id="tentang-kami" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-20">
             <h2 class="text-4xl mb-4">Tentang <span class="text-primary">Kami</span></h2>
             <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
@@ -235,8 +235,8 @@
       </section>
 
       <!-- Produk -->
-      <section id="produk" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
+      <section id="produk" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-20">
             <h2 class="text-4xl mb-4">Produk <span class="text-primary">Kami</span></h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -363,10 +363,10 @@
       <section id="keunggulan" class="py-20 min-h-screen relative bg-background">
         <div
           class="absolute inset-0 z-0"
-          style="background: #ffffff; background-image: radial-gradient(circle at top center, #008da692, transparent 70%); filter: blur(80px); background-repeat: no-repeat"
+          style="background: #f9f9fa; background-image: radial-gradient(circle at top center, #008da692, transparent 70%); filter: blur(80px); background-repeat: no-repeat"
         ></div>
 
-        <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
           <div class="text-center mb-20">
             <h2 class="text-4xl mb-4">Keunggulan <span class="text-primary">Kami</span></h2>
             <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
@@ -432,7 +432,7 @@
 
       <!-- Klien -->
       <section id="klien" class="py-20 min-h-screen bg-muted/50">
-        <div class="container mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-20">
             <h2 class="text-4xl mb-4">Portofolio / <span class="text-primary">Klien</span></h2>
             <p class="text-xl text-foreground/70 max-w-3xl mx-auto">Dipercaya oleh berbagai mitra bisnis, mulai dari restoran, hotel, hingga distributor skala besar di Jawa Timur.</p>
@@ -473,7 +473,7 @@
 
       <!-- Kontak -->
       <section id="kontak" class="py-24 bg-background">
-        <div class="container mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-6">
           <div class="text-center mb-20">
             <h2 class="text-5xl mb-4">Kontak <span class="text-primary">Kami</span></h2>
             <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
@@ -614,7 +614,7 @@
     <!-- Footer -->
     <footer class="bg-primary text-background py-16 relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-      <div class="container mx-auto px-6 relative z-10">
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
         <div class="grid md:grid-cols-4 gap-12 mb-16">
           <div class="scroll-reveal">
             <div class="flex flex-col justify-content-start items-start mb-3">
@@ -811,7 +811,7 @@
           pesan: e.target.pesan.value,
         };
 
-        fetch("https://script.google.com/macros/s/AKfycbyVno......s-btDv3T1DAJL1-t2i4uow/exec", {
+        fetch("https://script.google.com/macros/s/AKfyc...GG_5NR28vomB-btDv3T1DAJL1-t2i4uow/exec", {
           method: "POST",
           body: JSON.stringify(data),
         })
