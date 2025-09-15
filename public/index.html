@@ -134,25 +134,58 @@
             <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
           </div>
 
-          <div class="max-w-4xl mx-auto">
-            <!-- Main Description with decorative elements -->
-            <div class="bg-gradient-to-r from-primary/5 to-secondary/5 rounded-3xl p-10 mb-12 relative overflow-hidden">
-              <div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-              <div class="absolute bottom-0 left-0 w-32 h-32 bg-secondary/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-
-              <div class="relative z-10">
-                <h3 class="text-2xl text-foreground mb-6">Dari Sawah Terbaik ke Meja Makan Anda</h3>
-                <p class="text-lg text-foreground/70 leading-relaxed text-justify">
+          <div class="grid lg:grid-cols-2 gap-6 mb-12 pb-8">
+            <div class="space-y-8">
+              <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-3xl border border-primary/20">
+                <h3 class="text-3xl text-gray-800 mb-6">Dari Sawah Terbaik ke Meja Makan Anda</h3>
+                <p class="text-lg text-gray-700 leading-relaxed text-justify">
                   Angsa Putih adalah salah satu unit usaha dari CV. Needfast yang berfokus pada penyediaan beras premium berkualitas tinggi. Berlokasi di Surabaya dengan kantor pusat di jalan
                   Mojoklanggru Lor 75, kami memastikan distribusi yang cepat dan terpercaya.
                 </p>
-                <p class="text-lg text-foreground/70 leading-relaxed text-justify mt-6">
+                <p class="text-lg text-gray-700 leading-relaxed text-justify mt-6">
                   Proses penggilingan dilakukan langsung di gudang Bojonegoro, daerah penghasil padi terbaik di Jawa Timur. Dengan legalitas resmi dan pengalaman panjang, kami hadir untuk menjadi
                   mitra terpercaya dalam memenuhi kebutuhan beras premium masyarakat, retail, maupun korporasi.
                 </p>
               </div>
+              <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                <img src="./img/beras3kg_2.webp" alt="Gudang Penggilingan" class="w-full h-60 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500 object-left-bottom" />
+              </div>
             </div>
 
+            <div class="relative">
+              <div class="grid grid-cols-2 gap-6">
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                  <img src="./img/proses.webp" alt="" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                  <img src="./img/proses2.webp" alt="" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="z-1 relative group overflow-hidden rounded-2xl shadow-lg col-span-2">
+                  <video
+                    autoplay
+                    muted
+                    loop
+                    class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"
+                  >
+                    <source src="./img/beras.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <img src="./img/beras2.webp" alt="Beras Angsa Putih" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500 hidden" />
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                  <img src="./img/gudang.webp" alt="" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="relative group overflow-hidden rounded-2xl shadow-lg">
+                  <img src="./img/proses3.webp" alt="" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+              </div>
+              <div class="absolute -top-4 -right-4 w-24 h-24 bg-secondary/20 rounded-full"></div>
+              <div class="absolute z-0 -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full"></div>
+            </div>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
             <!-- Vision & Mission with modern cards -->
             <div class="space-y-8">
               <h3 class="text-3xl text-foreground text-center mb-10 flex items-center justify-center gap-4">
@@ -793,7 +826,7 @@
           pesan: e.target.pesan.value,
         };
 
-        fetch("https://script.google.com/macros/s/AKf....GG_5NR28vomB-btDv3T1DAJL1-t2i4uow/exec", {
+        fetch("https://script.google.com/macros/s/AKfycb...rGG_5NR28vomB-btDv3T1DAJL1-t2i4uow/exec", {
           method: "POST",
           body: JSON.stringify(data),
         })
