@@ -159,7 +159,7 @@ button.btn {
   left: 0;
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, #008da6, #00b8cc, #ffcc00);
+  background: linear-gradient(90deg, #13c2d6, #00b8cc, #ffcc00);
   transition: width 0.4s ease;
 }
 
