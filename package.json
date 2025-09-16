@@ -1,16 +1,23 @@
 {
   "name": "beras-angsa-putih-landing-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "A premium rice brand landing page built with modern web technologies",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch",
     "build": "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --minify"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "landing-page",
+    "beras-angsa-putih",
+    "tailwindcss",
+    "html",
+    "css",
+    "static-site"
+  ],
+  "author": "CV. Needfast - Angsa Putih",
+  "license": "SEE LICENSE IN LICENSE",
   "type": "commonjs",
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
@@ -18,5 +25,13 @@
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/cli": "^4.1.13",
     "tailwindcss": "^4.1.13"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zakialawi02/beras-angsa-putih-landing-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zakialawi02/beras-angsa-putih-landing-page/issues"
+  },
+  "homepage": "https://github.com/zakialawi02/beras-angsa-putih-landing-page#readme"
 }
