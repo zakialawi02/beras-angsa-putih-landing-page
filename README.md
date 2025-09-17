@@ -72,6 +72,6 @@ The site requires:
 
 ## License
 
-This project is proprietary software. All rights reserved. Unauthorized copying, distribution, modification, or any other use of this software is strictly prohibited. For permission to use this software, please contact the copyright holder and developer.
+This project is proprietary software. © 2025 CV. NEEDFAST All rights reserved. Unauthorized copying, distribution, modification, or any other use of this software is strictly prohibited. For permission to use this software, please contact the copyright holder and developer.
 
 See the [LICENSE](LICENSE) file for full license terms.
