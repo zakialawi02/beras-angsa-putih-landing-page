@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Prevent crawling of admin and private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
